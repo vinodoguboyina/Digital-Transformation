@@ -55,8 +55,17 @@ export default function Solutions() {
   const fileRef = useRef(null)
 
   useEffect(() => {
-    setSolutions(savedSolutions)
-  }, [savedSolutions])
+    let ignore = false
+    fetch('/api/solutions')
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => {
+        if (!ignore && Array.isArray(data)) setSolutions(data)
+      })
+      .catch(() => {})
+    return () => {
+      ignore = true
+    }
+  }, [])
 
   function openAdd() {
     setError('')
@@ -80,7 +89,8 @@ export default function Solutions() {
       async onOk() {
         sessionStorage.setItem('dt-scroll', JSON.stringify({ y: window.scrollY, t: Date.now() }))
         const response = await fetch(`/api/solutions/${encodeURIComponent(id)}`, { method: 'DELETE' })
-        if (!response.ok) throw new Error('Delete failed')
+        const result = await response.json().catch(() => null)
+        if (!response.ok) throw new Error(result?.error || 'Delete failed')
         setSolutions((current) => current.filter((solution) => solution.id !== id))
       },
     })
@@ -118,9 +128,9 @@ export default function Solutions() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       })
-      const saved = await response.json()
-      if (!response.ok) {
-        setError(saved.error || 'Could not save.')
+      const saved = await response.json().catch(() => null)
+      if (!response.ok || !saved?.id) {
+        setError(saved?.error || 'Could not save.')
         return
       }
       setSolutions((current) => {
@@ -129,7 +139,7 @@ export default function Solutions() {
       })
       setForm(null)
     } catch {
-      setError('Could not save. Keep the app running so the files can be written.')
+      setError('Could not save.')
     }
   }
 
