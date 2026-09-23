@@ -1,0 +1,62 @@
+[
+  {
+    "id": "quality",
+    "title": "Quality Status – INDi4.0 Basic",
+    "text": "Watch production quality while the job is running. Live dashboards show defects so the team can report and correct them before the batch moves on.",
+    "image": "quality.png"
+  },
+  {
+    "id": "spc",
+    "title": "Quality Status – INDi4.0 Basic + SPC",
+    "text": "Add statistical process control to live quality checks. See process capability and quality trends, and catch drift before it becomes scrap.",
+    "image": "spc.png"
+  },
+  {
+    "id": "tools",
+    "title": "Tool Room Inventory Management (Smart_IvT)",
+    "text": "Track every tool from the store to the machine. Record issue and return, and watch remaining tool life so a worn tool is replaced on time.",
+    "image": "tools.png"
+  },
+  {
+    "id": "gauges",
+    "title": "Gauge Management Software",
+    "text": "Keep each gauge calibrated and accounted for. Store its history, see where it is, and get an alert before the calibration date is missed.",
+    "image": "gauges.png"
+  },
+  {
+    "id": "lab",
+    "title": "Digitisation of Testing Labs",
+    "text": "Replace paper lab books with digital test records. The lab follows one workflow, and the test report is generated from the same entry.",
+    "image": "lab.png"
+  },
+  {
+    "id": "orders",
+    "title": "Order Management App for Top Management",
+    "text": "Give leadership a live view of orders and deliveries. One dashboard shows business performance without waiting for a compiled report.",
+    "image": "orders.png"
+  },
+  {
+    "id": "viewer",
+    "title": "3D Viewer",
+    "text": "Open CAD models in the browser. Engineers review the part together without installing a separate viewer on every machine.",
+    "image": "viewer.png"
+  },
+  {
+    "id": "jobcard",
+    "title": "Digitisation of Job Cards",
+    "text": "Take job cards off paper. The shop floor updates the card as the job moves, so production status is visible as the shift runs.",
+    "image": "jobcard.png"
+  },
+  {
+    "id": "projects",
+    "title": "Project Management App (ClickUp-Based)",
+    "text": "Plan the project, assign each task, and keep the team working from the same board. Built on ClickUp so planning stays with the work.",
+    "image": "projects.png"
+  },
+  {
+    "id": "indiq",
+    "title": "INDIQ 4.0 – AI Manufacturing Intelligence",
+    "text": "Digitize drawings, extract characteristics with AI, and connect machines over IoT. Quality data feeds back into the process so the loop stays closed.",
+    "image": "indiq.png"
+  }
+]

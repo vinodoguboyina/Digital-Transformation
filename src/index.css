@@ -1,0 +1,105 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --color-navy: #06101c;
+  --color-brand: #2f7cf6;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+}
+
+:root {
+  --background: #07111f;
+  --foreground: #f8fafc;
+  --card: #0d1c30;
+  --card-foreground: #f8fafc;
+  --primary: #2f7cf6;
+  --primary-foreground: #ffffff;
+  --muted: #13263d;
+  --muted-foreground: #94a3b8;
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: #06101c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-rise {
+  animation: hero-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.transform-letter {
+  display: inline-block;
+  background-image: linear-gradient(105deg, #dbeafe 0%, #2f7cf6 32%, #ffffff 50%, #7dd3fc 68%, #2f7cf6 100%);
+  background-size: 240% 100%;
+  background-clip: text;
+  color: transparent;
+  animation:
+    letter-flip 0.7s cubic-bezier(0.22, 1, 0.36, 1) both,
+    transform-shine 2.6s linear infinite;
+}
+
+@keyframes letter-flip {
+  from {
+    opacity: 0;
+    transform: translateY(0.45em) rotateX(-75deg);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+@keyframes transform-shine {
+  from {
+    background-position: 120% 0;
+  }
+  to {
+    background-position: -120% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-rise,
+  .transform-letter {
+    animation: none;
+    color: #2f7cf6;
+    background-image: none;
+  }
+}
