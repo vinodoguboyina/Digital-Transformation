@@ -35,7 +35,7 @@ export const solutions = [
     id: "gauges",
     title: "Gauge Management Software",
     text: "Keep each gauge calibrated and accounted for. Store its history, see where it is, and get an alert before the calibration date is missed.",
-    url: "",
+    url: "http://localhost/",
     image: img_gauges,
   },
   {
