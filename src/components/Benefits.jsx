@@ -93,8 +93,8 @@ export default function Benefits() {
         </div>
       </div>
 
-      <div className="mx-auto mt-20 w-full max-w-7xl rounded-3xl bg-[#07111f] px-6 py-10 text-white sm:px-10 lg:py-12">
-        <p className="text-xs font-semibold tracking-[0.16em] text-sky-300">BENEFITS YOU GET</p>
+      <div className="mx-auto mt-20 w-full max-w-7xl rounded-3xl bg-[#f5f7fb] px-6 py-10 text-slate-900 sm:px-10 lg:py-12">
+        <p className="text-xs font-semibold tracking-[0.16em] text-brand">BENEFITS YOU GET</p>
         <h2 className="mt-2 max-w-xl text-3xl font-bold tracking-tight sm:text-4xl">
           What changes once the work is on the system
         </h2>
@@ -102,13 +102,13 @@ export default function Benefits() {
           {benefits.map((item) => {
             const Icon = item.icon
             return (
-              <div key={item.title} className="flex items-start gap-4 border-t border-white/15 pt-5">
+              <div key={item.title} className="flex items-start gap-4 border-t border-slate-200 pt-5">
                 <span className="grid size-11 shrink-0 place-items-center rounded-full bg-brand text-white">
                   <Icon className="size-5" aria-hidden="true" />
                 </span>
                 <span>
                   <p className="text-lg font-semibold">{item.title}</p>
-                  <p className="mt-1 text-sm leading-relaxed text-slate-300">{item.text}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-slate-600">{item.text}</p>
                 </span>
               </div>
             )
