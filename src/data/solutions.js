@@ -21,7 +21,7 @@ export const solutions = [
     id: "spc",
     title: "Quality Status – INDi4.0 Basic + SPC",
     text: "Add statistical process control to live quality checks. See process capability and quality trends, and catch drift before it becomes scrap.",
-    url: "http://localhost:8090/",
+    url: "http://localhost:8090/    http://localhost:8006/docs#/License/validate_license_license_validate_license_get",
     image: img_spc,
   },
   {
