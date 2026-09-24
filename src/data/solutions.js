@@ -28,7 +28,7 @@ export const solutions = [
     id: "tools",
     title: "Tool Room Inventory Management",
     text: "Track every tool from the store to the machine. Record issue and return, and watch remaining tool life so a worn tool is replaced on time.",
-    url: "",
+    url: "http://localhost:5177/login",
     image: img_tools,
   },
   {
