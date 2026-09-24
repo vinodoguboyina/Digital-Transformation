@@ -42,7 +42,7 @@ export const solutions = [
     id: "lab",
     title: "Digitisation of Testing Labs",
     text: "Replace paper lab books with digital test records. The lab follows one workflow, and the test report is generated from the same entry.",
-    url: "http://localhost:3000/login   http://localhost:16000/docs",
+    url: "http://localhost:3000/login",
     image: img_lab,
   },
   {
