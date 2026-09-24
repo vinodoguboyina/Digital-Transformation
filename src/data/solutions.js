@@ -80,6 +80,13 @@ export const solutions = [
     url: "",
     image: img_indiq,
   },
+  {
+    id: "08bf4eb9-2e53-405a-b11f-3fc20b30fe18",
+    title: "vds",
+    text: "VS",
+    url: "",
+    image: "",
+  },
 ]
 
 if (import.meta.hot) {
