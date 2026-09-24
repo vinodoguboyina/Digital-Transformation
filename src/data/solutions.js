@@ -80,13 +80,6 @@ export const solutions = [
     url: "",
     image: img_indiq,
   },
-  {
-    id: "e9f2b780-d71f-48cd-b574-6073fa172495",
-    title: "bsfb",
-    text: "dsbd",
-    url: "",
-    image: "",
-  },
 ]
 
 if (import.meta.hot) {
