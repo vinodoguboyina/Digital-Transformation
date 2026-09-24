@@ -3,7 +3,7 @@
     "id": "quality",
     "title": "Quality Status – INDi4.0 Basic",
     "text": "Watch production quality while the job is running. Live dashboards show defects so the team can report and correct them before the batch moves on.",
-    "url": "/videos/Quality-Digitisation.mp4",
+    "url": "public/videos/Quality-Digitisation.mp4",
     "image": "products/screen-quality.png"
   },
   {
