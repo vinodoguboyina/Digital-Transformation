@@ -80,13 +80,6 @@ export const solutions = [
     url: "",
     image: img_indiq,
   },
-  {
-    id: "a5150e9f-e7b3-48f8-a923-f5a60a6b1f7a",
-    title: "gfesg",
-    text: "sg",
-    url: "",
-    image: "",
-  },
 ]
 
 if (import.meta.hot) {
