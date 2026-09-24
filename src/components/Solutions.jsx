@@ -52,7 +52,13 @@ export default function Solutions() {
   const [solutions, setSolutions] = useState(savedSolutions)
   const [form, setForm] = useState(null)
   const [error, setError] = useState('')
+  const [notice, setNotice] = useState('')
   const fileRef = useRef(null)
+
+  function showNotice(text) {
+    setNotice(text)
+    window.setTimeout(() => setNotice((current) => (current === text ? '' : current)), 3000)
+  }
 
   useEffect(() => {
     let ignore = false
@@ -92,6 +98,7 @@ export default function Solutions() {
         const result = await response.json().catch(() => null)
         if (!response.ok) throw new Error(result?.error || 'Delete failed')
         setSolutions((current) => current.filter((solution) => solution.id !== id))
+        showNotice('Solution deleted.')
       },
     })
   }
@@ -133,11 +140,13 @@ export default function Solutions() {
         setError(saved?.error || 'Could not save.')
         return
       }
+      const editing = solutions.some((solution) => solution.id === saved.id)
       setSolutions((current) => {
         const exists = current.some((solution) => solution.id === saved.id)
         return exists ? current.map((solution) => (solution.id === saved.id ? saved : solution)) : [...current, saved]
       })
       setForm(null)
+      showNotice(editing ? 'Solution updated.' : 'Solution added.')
     } catch {
       setError('Could not save.')
     }
@@ -145,6 +154,11 @@ export default function Solutions() {
 
   return (
     <section id="products" className="scroll-mt-4 bg-[#f5f7fb] px-3 py-10 sm:px-6 sm:py-14 lg:px-10 lg:py-16">
+      {notice && (
+        <div className="fixed bottom-5 left-1/2 z-[60] -translate-x-1/2 rounded-full bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-lg">
+          {notice}
+        </div>
+      )}
       <div className="mx-auto w-full max-w-7xl">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div className="min-w-0 max-w-2xl">
