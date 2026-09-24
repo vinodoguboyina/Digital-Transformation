@@ -70,7 +70,7 @@ export const solutions = [
     id: "projects",
     title: "Project Management App (ClickUp-Based)",
     text: "Plan the project, assign each task, and keep the team working from the same board. Built on ClickUp so planning stays with the work.",
-    url: "",
+    url: "http://localhost:8080/",
     image: img_projects,
   },
   {
