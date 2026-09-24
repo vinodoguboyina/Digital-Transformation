@@ -56,7 +56,7 @@ export const solutions = [
     id: "viewer",
     title: "3D Viewer",
     text: "Open CAD models in the browser. Engineers review the part together without installing a separate viewer on every machine.",
-    url: "",
+    url: "http://localhost:5173/",
     image: img_viewer,
   },
   {
