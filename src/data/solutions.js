@@ -63,7 +63,7 @@ export const solutions = [
     id: "jobcard",
     title: "Digitisation of Job Cards",
     text: "Take job cards off paper. The shop floor updates the card as the job moves, so production status is visible as the shift runs.",
-    url: "",
+    url: "http://localhost:5173/login",
     image: img_jobcard,
   },
   {
