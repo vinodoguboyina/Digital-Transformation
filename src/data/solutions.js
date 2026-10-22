@@ -40,7 +40,7 @@ export const solutions = [
     category: "quality-management",
     url: "",
     image: img_gauges,
-    flyers: [],
+    flyers: [{"id":"c3417512-d0e0-4942-be3b-a29fd3845bd3","name":"plug 1.pdf","file":"gauges/c3417512_d0e0_4942_be3b_a29fd3845bd3.pdf","type":"application/pdf"}],
   },
   {
     id: "quality",
