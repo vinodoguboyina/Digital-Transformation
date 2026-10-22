@@ -110,7 +110,7 @@ export const solutions = [
     title: "Project Management App",
     text: "Risk mitigation and rescheduling when the machine schedule changes. Internal tasks, owners and dates sit next to the production plan.",
     category: "process-planning",
-    url: "",
+    url: "http://localhost:8080/developer-dashboard",
     image: img_projects,
     flyers: [],
   },
