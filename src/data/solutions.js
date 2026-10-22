@@ -49,7 +49,7 @@ export const solutions = [
     category: "quality-management",
     url: "",
     image: img_quality,
-    flyers: [],
+    flyers: [{"id":"cca4c830-4e30-4249-b062-d41d31a927be","name":"INDi4.0 Product Brochure.pdf","file":"quality/cca4c830_4e30_4249_b062_d41d31a927be.pdf","type":"application/pdf"}],
   },
   {
     id: "spc",
