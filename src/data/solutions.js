@@ -67,7 +67,7 @@ export const solutions = [
     category: "quality-management",
     url: "http://localhost:5540/",
     image: img_lab,
-    flyers: [],
+    flyers: [{"id":"7894c553-afe2-44c7-8bcf-860c73d9f2bc","name":"LIMS .pdf","file":"lab/7894c553_afe2_44c7_8bcf_860c73d9f2bc.pdf","type":"application/pdf"}],
   },
   {
     id: "indiq",
