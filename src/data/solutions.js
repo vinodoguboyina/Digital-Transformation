@@ -94,7 +94,7 @@ export const solutions = [
     category: "inventory",
     url: "",
     image: img_tools,
-    flyers: [{"id":"1718f0af-e18f-470c-8d78-701a74396714","name":"INVENTIX Product Brochure.pdf","file":"tools/1718f0af_e18f_470c_8d78_701a74396714.pdf","type":"application/pdf"}],
+    flyers: [{"id":"1718f0af-e18f-470c-8d78-701a74396714","name":"INVENTIX Product Brochure.pdf","file":"tools/1718f0af_e18f_470c_8d78_701a74396714.pdf","type":"application/pdf"},{"id":"1f77bf99-9a33-4f60-a74f-8d2dca6bc0e8","name":"CRIBmanager Product Brochure.pdf","file":"tools/1f77bf99_9a33_4f60_a74f_8d2dca6bc0e8.pdf","type":"application/pdf"}],
   },
   {
     id: "orders",
