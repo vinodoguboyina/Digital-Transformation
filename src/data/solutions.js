@@ -76,7 +76,7 @@ export const solutions = [
     category: "quality-management",
     url: "",
     image: img_indiq,
-    flyers: [],
+    flyers: [{"id":"5158bf7a-8d03-43f6-bd4f-205f9ac4ae9e","name":"INDi4.0 Product Brochure.pdf","file":"indiq/5158bf7a_8d03_43f6_bd4f_205f9ac4ae9e.pdf","type":"application/pdf"}],
   },
   {
     id: "jobcard",
