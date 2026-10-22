@@ -59,7 +59,7 @@
       "title": "Quality Status – INDi4.0 Basic + SPC",
       "text": "The same quality capture, with control charts and process capability on the characteristics already being inspected.",
       "category": "quality-management",
-      "url": "",
+      "url": "http://127.0.0.1:8090/",
       "image": "products/photo-spc.jpg",
       "flyers": []
     },
