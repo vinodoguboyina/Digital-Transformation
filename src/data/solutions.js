@@ -49,7 +49,7 @@ export const solutions = [
     category: "quality-management",
     url: "",
     image: img_quality,
-    flyers: [{"id":"cca4c830-4e30-4249-b062-d41d31a927be","name":"INDi4.0 Product Brochure.pdf","file":"quality/cca4c830_4e30_4249_b062_d41d31a927be.pdf","type":"application/pdf"},{"id":"d0b9bd4b-a8a9-4906-9c89-6ea2a73a3914","name":"INDi4.0 Product Brochure.pdf","file":"quality/d0b9bd4b_a8a9_4906_9c89_6ea2a73a3914.pdf","type":"application/pdf"}],
+    flyers: [{"id":"d0b9bd4b-a8a9-4906-9c89-6ea2a73a3914","name":"INDi4.0 Product Brochure.pdf","file":"quality/d0b9bd4b_a8a9_4906_9c89_6ea2a73a3914.pdf","type":"application/pdf"}],
   },
   {
     id: "spc",
