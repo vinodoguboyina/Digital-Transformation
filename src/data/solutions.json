@@ -42,9 +42,9 @@
       "id": "quality",
       "title": "Quality Status – INDi4.0 Basic",
       "text": "Capture process quality against set limits and notify deviations. First-off and in-process results sit on the job, not on a sheet entered after the bin has moved.",
+      "category": "quality-management",
       "url": "",
       "image": "products/photo-quality.jpg",
-      "category": "quality-management",
       "flyers": []
     },
     {
