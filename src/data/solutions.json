@@ -90,7 +90,14 @@
       "category": "inventory",
       "url": "",
       "image": "products/photo-tools.jpg",
-      "flyers": []
+      "flyers": [
+        {
+          "id": "1718f0af-e18f-470c-8d78-701a74396714",
+          "name": "INVENTIX Product Brochure.pdf",
+          "file": "tools/1718f0af_e18f_470c_8d78_701a74396714.pdf",
+          "type": "application/pdf"
+        }
+      ]
     },
     {
       "id": "orders",
