@@ -1,3 +1,4 @@
+import { readAdmin, unauthorized } from '../../server/auth.js'
 import { deleteSolution } from '../../server/github-solutions.js'
 
 function send(res, status, body) {
@@ -10,6 +11,10 @@ export default async function handler(req, res) {
     return
   }
   try {
+    if (!readAdmin(req)) {
+      send(res, 401, unauthorized)
+      return
+    }
     const result = await deleteSolution(String(req.query.id || ''))
     send(res, result.status, result.body)
   } catch (error) {

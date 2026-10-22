@@ -1,72 +1,133 @@
-[
-  {
-    "id": "quality",
-    "title": "Quality Status – INDi4.0 Basic",
-    "text": "Watch production quality while the job is running. Live dashboards show defects so the team can report and correct them before the batch moves on.",
-    "url": "",
-    "image": "products/screen-quality.png"
-  },
-  {
-    "id": "spc",
-    "title": "Quality Status – INDi4.0 Basic + SPC",
-    "text": "Add statistical process control to live quality checks. See process capability and quality trends, and catch drift before it becomes scrap.",
-    "url": "",
-    "image": "products/screen-spc.png"
-  },
-  {
-    "id": "tools",
-    "title": "Tool Room Inventory Management",
-    "text": "Track every tool from the store to the machine. Record issue and return, and watch remaining tool life so a worn tool is replaced on time.",
-    "url": "",
-    "image": "products/screen-tools.png"
-  },
-  {
-    "id": "gauges",
-    "title": "Gauge Management Software",
-    "text": "Keep each gauge calibrated and accounted for. Store its history, see where it is, and get an alert before the calibration date is missed.",
-    "url": "",
-    "image": "products/screen-gauges.png"
-  },
-  {
-    "id": "lab",
-    "title": "Digitisation of Testing Labs",
-    "text": "Replace paper lab books with digital test records. The lab follows one workflow, and the test report is generated from the same entry.",
-    "url": "http://localhost:5540/",
-    "image": "products/screen-lab.png"
-  },
-  {
-    "id": "orders",
-    "title": "Order Management App for Top Management",
-    "text": "Give leadership a live view of orders and deliveries. One dashboard shows business performance without waiting for a compiled report.",
-    "url": "",
-    "image": "products/screen-orders.png"
-  },
-  {
-    "id": "viewer",
-    "title": "3D Viewer",
-    "text": "Open CAD models in the browser. Engineers review the part together without installing a separate viewer on every machine.",
-    "url": "",
-    "image": "products/screen-3d.png"
-  },
-  {
-    "id": "jobcard",
-    "title": "Digitisation of Job Cards",
-    "text": "Take job cards off paper. The shop floor updates the card as the job moves, so production status is visible as the shift runs.",
-    "url": "",
-    "image": "products/screen-jobcard.png"
-  },
-  {
-    "id": "projects",
-    "title": "Project Management App (ClickUp-Based)",
-    "text": "Plan the project, assign each task, and keep the team working from the same board. Built on ClickUp so planning stays with the work.",
-    "url": "",
-    "image": "products/screen-projects.png"
-  },
-  {
-    "id": "indiq",
-    "title": "INDIQ 4.0 – AI Manufacturing Intelligence",
-    "text": "Digitize drawings, extract characteristics with AI, and connect machines over IoT. Quality data feeds back into the process so the loop stays closed.",
-    "url": "",
-    "image": "products/screen-indiq.png"
-  }
-]
+{
+  "categories": [
+    {
+      "id": "quality-management",
+      "name": "Quality Management",
+      "text": "Dimensional data from instruments and CMMs, ballooned drawings, inspection reports and calibration alerts. Deviation is visible before the batch is closed."
+    },
+    {
+      "id": "production-monitoring",
+      "name": "Production Monitoring",
+      "text": "Job cards, poka-yoke on job setup, production data capture, machine-wise OEE and energy. Availability, performance and quality on the same board."
+    },
+    {
+      "id": "inventory",
+      "name": "Inventory",
+      "text": "Tools, jigs, fixtures, spares, consumables and gauges. Issue and return against operator or production order, with usage by machine, shift and part."
+    },
+    {
+      "id": "process-planning",
+      "name": "Process Planning",
+      "text": "Process charts, machine availability, scheduling, production review and rescheduling when priorities change. Digitized production orders instead of a compiled pack."
+    }
+  ],
+  "solutions": [
+    {
+      "id": "gauges",
+      "title": "Gauge Management Software",
+      "text": "Register every gauge with identity, location and due date. Alerts fire before calibration is missed, so a gauge past date is not still on the machine.",
+      "category": "quality-management",
+      "url": "",
+      "image": "products/photo-gauges.jpg",
+      "flyers": []
+    },
+    {
+      "id": "quality",
+      "title": "Quality Status – INDi4.0 Basic",
+      "text": "Capture process quality against set limits and notify deviations. First-off and in-process results sit on the job, not on a sheet entered after the bin has moved.",
+      "url": "",
+      "image": "products/photo-quality.jpg",
+      "category": "quality-management",
+      "flyers": []
+    },
+    {
+      "id": "spc",
+      "title": "Quality Status – INDi4.0 Basic + SPC",
+      "text": "The same quality capture, with control charts and process capability on the characteristics already being inspected.",
+      "url": "",
+      "image": "products/photo-spc.jpg",
+      "category": "quality-management",
+      "flyers": []
+    },
+    {
+      "id": "lab",
+      "title": "Digitisation of Testing Labs",
+      "text": "Dimensional measurement for IPID monitoring. Data from measuring instruments and CMMs, and the inspection report generated from the same entry.",
+      "url": "http://localhost:5540/",
+      "image": "products/photo-lab.jpg",
+      "category": "quality-management",
+      "flyers": []
+    },
+    {
+      "id": "indiq",
+      "title": "INDIQ 4.0 – AI Manufacturing Intelligence",
+      "text": "Ballooned drawing, extracted characteristics, CMM/VMS program and the final inspection report in one loop, so the checklist is not typed from a paper print.",
+      "url": "",
+      "image": "products/photo-indiq.jpg",
+      "category": "quality-management",
+      "flyers": []
+    },
+    {
+      "id": "jobcard",
+      "title": "Digitisation of Job Cards",
+      "text": "Job card display: when the card is received or scanned, the operator sees the interlinked documents. Routing and sign-off stay with the job.",
+      "url": "",
+      "image": "products/photo-jobcard.jpg",
+      "category": "production-monitoring",
+      "flyers": []
+    },
+    {
+      "id": "tools",
+      "title": "Tool Room Inventory Management",
+      "text": "Register tools, jigs and fixtures. Record issue and return against operator or production order. Usage by machine, shift and part number, with remaining life at issue.",
+      "category": "inventory",
+      "url": "",
+      "image": "products/photo-tools.jpg",
+      "flyers": []
+    },
+    {
+      "id": "orders",
+      "title": "Order Management App for Top Management",
+      "text": "Digitized production orders. Supervisors review and approve the plan; leadership sees open orders, promised dates and dispatch without waiting for a compiled file.",
+      "url": "",
+      "image": "products/photo-orders.jpg",
+      "category": "process-planning",
+      "flyers": []
+    },
+    {
+      "id": "projects",
+      "title": "Project Management App",
+      "text": "Risk mitigation and rescheduling when the machine schedule changes. Internal tasks, owners and dates sit next to the production plan.",
+      "category": "process-planning",
+      "url": "",
+      "image": "products/photo-projects.jpg",
+      "flyers": []
+    },
+    {
+      "id": "viewer",
+      "title": "3D Viewer",
+      "text": "Process visualization on the shop PC. Open the model with the job without a CAD seat on every terminal.",
+      "category": "process-planning",
+      "url": "",
+      "image": "products/photo-viewer.jpg",
+      "flyers": []
+    }
+  ],
+  "customers": [
+    {
+      "id": "tesa",
+      "name": "Tesa",
+      "image": "customers/tesa.svg"
+    },
+    {
+      "id": "karakal-dubai",
+      "name": "Karakal Dubai",
+      "image": "customers/karakal-dubai.svg"
+    },
+    {
+      "id": "eagle-bengaluru",
+      "name": "Eagle Bengaluru",
+      "image": "customers/eagle-bengaluru.svg"
+    }
+  ]
+}

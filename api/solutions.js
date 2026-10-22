@@ -1,3 +1,4 @@
+import { readAdmin, unauthorized } from '../server/auth.js'
 import { listSolutions, saveSolution } from '../server/github-solutions.js'
 
 export const config = {
@@ -19,6 +20,10 @@ export default async function handler(req, res) {
       return
     }
     if (req.method === 'POST') {
+      if (!readAdmin(req)) {
+        send(res, 401, unauthorized)
+        return
+      }
       const result = await saveSolution(req.body || {})
       send(res, result.status, result.body)
       return

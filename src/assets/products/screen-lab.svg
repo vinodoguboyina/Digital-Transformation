@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810">
+  <rect width="1440" height="810" fill="#F4F7FB"/>
+  <rect width="1440" height="56" fill="#0A2744"/>
+  <circle cx="32" cy="28" r="8" fill="none" stroke="#7DD3FC" stroke-width="1.6"/>
+  <circle cx="32" cy="28" r="2.2" fill="#7DD3FC"/>
+  <text x="48" y="33" font-size="15" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#FFFFFF">Digital Transformation</text>
+  <text x="280" y="33" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#B9D4EA">Quality Management</text>
+  <text x="1188" y="33" text-anchor="end" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#B9D4EA">K. Rao  ·  QC</text>
+  <text x="1368" y="33" text-anchor="end" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#B9D4EA">Shift A  ·  Line 2</text>
+  <rect x="0" y="56" width="200" height="754" fill="#FFFFFF"/>
+  <rect x="200" y="56" width="1" height="754" fill="#D5E2EF"/>
+  <rect x="12" y="72" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="93" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Gauges</text>
+<rect x="12" y="108" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="129" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">INDi4.0</text>
+<rect x="12" y="144" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="165" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">SPC</text>
+<rect x="12" y="180" width="176" height="32" rx="6" fill="#E8F2FC"/>
+        <text x="28" y="201" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#1B78D4">Lab</text>
+<rect x="12" y="216" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="237" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">INDIQ</text>
+<rect x="12" y="252" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="273" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Travel card</text>
+<rect x="12" y="288" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="309" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Tool crib</text>
+<rect x="12" y="324" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="345" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Orders</text>
+<rect x="12" y="360" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="381" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Planning</text>
+<rect x="12" y="396" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="417" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">3D viewer</text>
+  <text x="228" y="92" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Inspection report  ·  IPID-211090540095-10</text>
+  <rect x="980" y="68" width="236" height="32" rx="6" fill="#FFFFFF" stroke="#D5E2EF"/>
+  <text x="996" y="89" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Search plant / job</text>
+  <rect x="1224" y="68" width="80" height="32" rx="6" fill="#1B78D4"/>
+  <text x="1246" y="89" font-size="12" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#FFFFFF">Filter</text>
+  <rect x="1312" y="68" width="84" height="32" rx="6" fill="#FFFFFF" stroke="#D5E2EF"/>
+  <text x="1330" y="89" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Export</text>
+  <rect x="228" y="112" width="1168" height="86" rx="10" fill="#FFFFFF" stroke="#D5E2EF"/>
+    <text x="248" y="144" font-size="12" fill="#5A7188" font-family="Segoe UI, Arial, sans-serif">Part</text>
+    <text x="248" y="168" font-size="15" font-weight="700" fill="#0A2744" font-family="Segoe UI, Arial, sans-serif">Machined collar — BTU 80 C</text>
+    <text x="620" y="144" font-size="12" fill="#5A7188" font-family="Segoe UI, Arial, sans-serif">Part No.</text>
+    <text x="620" y="168" font-size="15" font-weight="700" fill="#0A2744" font-family="Segoe UI, Arial, sans-serif">211090230083</text>
+    <text x="900" y="144" font-size="12" fill="#5A7188" font-family="Segoe UI, Arial, sans-serif">Operation</text>
+    <text x="900" y="168" font-size="15" font-weight="700" fill="#0A2744" font-family="Segoe UI, Arial, sans-serif">10</text>
+    <text x="1100" y="144" font-size="12" fill="#5A7188" font-family="Segoe UI, Arial, sans-serif">Qty</text>
+    <text x="1100" y="168" font-size="15" font-weight="700" fill="#0A2744" font-family="Segoe UI, Arial, sans-serif">1</text>
+    <rect x="228" y="220" width="1060" height="312" rx="10" fill="#FFFFFF" stroke="#D5E2EF"/>
+    <rect x="228" y="220" width="1060" height="44" rx="10" fill="#F3F7FB"/>
+    <rect x="228" y="254" width="1060" height="10" fill="#F3F7FB"/>
+    <text x="242" y="248" font-size="11" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Zone</text>
+<text x="352" y="248" font-size="11" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Nominal</text>
+<text x="492" y="248" font-size="11" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Tol</text>
+<text x="632" y="248" font-size="11" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Instrument</text>
+<text x="872" y="248" font-size="11" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Next cal.</text>
+<text x="1022" y="248" font-size="11" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Mean</text>
+<text x="1162" y="248" font-size="11" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Result</text><rect x="228" y="268" width="1060" height="44" fill="#FFFFFF"/><text x="242" y="296" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">A1</text>
+<text x="352" y="296" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">12.000</text>
+<text x="492" y="296" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">±0.02</text>
+<text x="632" y="296" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Micrometer G-118</text>
+<text x="872" y="296" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">12 May</text>
+<text x="1022" y="296" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">12.002</text>
+<text x="1162" y="296" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#1F9D5C">GO</text>
+<rect x="228" y="312" width="1060" height="44" fill="#F8FBFE"/><text x="242" y="340" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">A1</text>
+<text x="352" y="340" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">0.005</text>
+<text x="492" y="340" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">0 / +0.01</text>
+<text x="632" y="340" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Dial G-331</text>
+<text x="872" y="340" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">18 Apr</text>
+<text x="1022" y="340" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">0.004</text>
+<text x="1162" y="340" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#1F9D5C">GO</text>
+<rect x="228" y="356" width="1060" height="44" fill="#FFFFFF"/><text x="242" y="384" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">B2</text>
+<text x="352" y="384" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">40.000</text>
+<text x="492" y="384" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">±0.02</text>
+<text x="632" y="384" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Snap G-155</text>
+<text x="872" y="384" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">14 Aug</text>
+<text x="1022" y="384" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">40.006</text>
+<text x="1162" y="384" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#1F9D5C">GO</text>
+<rect x="228" y="400" width="1060" height="44" fill="#F8FBFE"/><text x="242" y="428" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">C1</text>
+<text x="352" y="428" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">18.000</text>
+<text x="492" y="428" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">±0.02</text>
+<text x="632" y="428" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Height G-412</text>
+<text x="872" y="428" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">09 May</text>
+<text x="1022" y="428" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">18.031</text>
+<text x="1162" y="428" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#C24141">NO-GO</text>
+<rect x="228" y="444" width="1060" height="44" fill="#FFFFFF"/><text x="242" y="472" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">D4</text>
+<text x="352" y="472" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">0.020</text>
+<text x="492" y="472" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">0 / +0.02</text>
+<text x="632" y="472" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Dial G-204</text>
+<text x="872" y="472" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">03 Jun</text>
+<text x="1022" y="472" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">0.012</text>
+<text x="1162" y="472" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#1F9D5C">GO</text>
+<rect x="228" y="488" width="1060" height="44" fill="#F8FBFE"/><text x="242" y="516" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">E2</text>
+<text x="352" y="516" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">8.000</text>
+<text x="492" y="516" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">±0.01</text>
+<text x="632" y="516" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Pin G-087</text>
+<text x="872" y="516" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">22 Jul</text>
+<text x="1022" y="516" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">8.002</text>
+<text x="1162" y="516" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#1F9D5C">GO</text>
+  <rect x="200" y="778" width="1240" height="32" fill="#FFFFFF"/>
+  <rect x="200" y="778" width="1240" height="1" fill="#D5E2EF"/>
+  <text x="216" y="799" font-size="11" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Plant  ·  Pune  ·  connected</text>
+  <text x="1368" y="799" text-anchor="end" font-size="11" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">22 Apr 2026  09:14</text>
+</svg>

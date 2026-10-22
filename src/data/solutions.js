@@ -1,85 +1,146 @@
-import img_quality from '../assets/products/screen-quality.png'
-import img_spc from '../assets/products/screen-spc.png'
-import img_tools from '../assets/products/screen-tools.png'
-import img_gauges from '../assets/products/screen-gauges.png'
-import img_lab from '../assets/products/screen-lab.png'
-import img_orders from '../assets/products/screen-orders.png'
-import img_viewer from '../assets/products/screen-3d.png'
-import img_jobcard from '../assets/products/screen-jobcard.png'
-import img_projects from '../assets/products/screen-projects.png'
-import img_indiq from '../assets/products/screen-indiq.png'
+import img_gauges from '../assets/products/photo-gauges.jpg'
+import img_quality from '../assets/products/photo-quality.jpg'
+import img_spc from '../assets/products/photo-spc.jpg'
+import img_lab from '../assets/products/photo-lab.jpg'
+import img_indiq from '../assets/products/photo-indiq.jpg'
+import img_jobcard from '../assets/products/photo-jobcard.jpg'
+import img_tools from '../assets/products/photo-tools.jpg'
+import img_orders from '../assets/products/photo-orders.jpg'
+import img_projects from '../assets/products/photo-projects.jpg'
+import img_viewer from '../assets/products/photo-viewer.jpg'
+
+export const categories = [
+  {
+    "id": "quality-management",
+    "name": "Quality Management",
+    "text": "Dimensional data from instruments and CMMs, ballooned drawings, inspection reports and calibration alerts. Deviation is visible before the batch is closed."
+  },
+  {
+    "id": "production-monitoring",
+    "name": "Production Monitoring",
+    "text": "Job cards, poka-yoke on job setup, production data capture, machine-wise OEE and energy. Availability, performance and quality on the same board."
+  },
+  {
+    "id": "inventory",
+    "name": "Inventory",
+    "text": "Tools, jigs, fixtures, spares, consumables and gauges. Issue and return against operator or production order, with usage by machine, shift and part."
+  },
+  {
+    "id": "process-planning",
+    "name": "Process Planning",
+    "text": "Process charts, machine availability, scheduling, production review and rescheduling when priorities change. Digitized production orders instead of a compiled pack."
+  }
+]
 
 export const solutions = [
   {
+    id: "gauges",
+    title: "Gauge Management Software",
+    text: "Register every gauge with identity, location and due date. Alerts fire before calibration is missed, so a gauge past date is not still on the machine.",
+    category: "quality-management",
+    url: "",
+    image: img_gauges,
+    flyers: [],
+  },
+  {
     id: "quality",
     title: "Quality Status – INDi4.0 Basic",
-    text: "Watch production quality while the job is running. Live dashboards show defects so the team can report and correct them before the batch moves on.",
+    text: "Capture process quality against set limits and notify deviations. First-off and in-process results sit on the job, not on a sheet entered after the bin has moved.",
+    category: "quality-management",
     url: "",
     image: img_quality,
+    flyers: [],
   },
   {
     id: "spc",
     title: "Quality Status – INDi4.0 Basic + SPC",
-    text: "Add statistical process control to live quality checks. See process capability and quality trends, and catch drift before it becomes scrap.",
+    text: "The same quality capture, with control charts and process capability on the characteristics already being inspected.",
+    category: "quality-management",
     url: "",
     image: img_spc,
-  },
-  {
-    id: "tools",
-    title: "Tool Room Inventory Management",
-    text: "Track every tool from the store to the machine. Record issue and return, and watch remaining tool life so a worn tool is replaced on time.",
-    url: "",
-    image: img_tools,
-  },
-  {
-    id: "gauges",
-    title: "Gauge Management Software",
-    text: "Keep each gauge calibrated and accounted for. Store its history, see where it is, and get an alert before the calibration date is missed.",
-    url: "",
-    image: img_gauges,
+    flyers: [],
   },
   {
     id: "lab",
     title: "Digitisation of Testing Labs",
-    text: "Replace paper lab books with digital test records. The lab follows one workflow, and the test report is generated from the same entry.",
+    text: "Dimensional measurement for IPID monitoring. Data from measuring instruments and CMMs, and the inspection report generated from the same entry.",
+    category: "quality-management",
     url: "http://localhost:5540/",
     image: img_lab,
-  },
-  {
-    id: "orders",
-    title: "Order Management App for Top Management",
-    text: "Give leadership a live view of orders and deliveries. One dashboard shows business performance without waiting for a compiled report.",
-    url: "",
-    image: img_orders,
-  },
-  {
-    id: "viewer",
-    title: "3D Viewer",
-    text: "Open CAD models in the browser. Engineers review the part together without installing a separate viewer on every machine.",
-    url: "",
-    image: img_viewer,
-  },
-  {
-    id: "jobcard",
-    title: "Digitisation of Job Cards",
-    text: "Take job cards off paper. The shop floor updates the card as the job moves, so production status is visible as the shift runs.",
-    url: "",
-    image: img_jobcard,
-  },
-  {
-    id: "projects",
-    title: "Project Management App (ClickUp-Based)",
-    text: "Plan the project, assign each task, and keep the team working from the same board. Built on ClickUp so planning stays with the work.",
-    url: "",
-    image: img_projects,
+    flyers: [],
   },
   {
     id: "indiq",
     title: "INDIQ 4.0 – AI Manufacturing Intelligence",
-    text: "Digitize drawings, extract characteristics with AI, and connect machines over IoT. Quality data feeds back into the process so the loop stays closed.",
+    text: "Ballooned drawing, extracted characteristics, CMM/VMS program and the final inspection report in one loop, so the checklist is not typed from a paper print.",
+    category: "quality-management",
     url: "",
     image: img_indiq,
+    flyers: [],
   },
+  {
+    id: "jobcard",
+    title: "Digitisation of Job Cards",
+    text: "Job card display: when the card is received or scanned, the operator sees the interlinked documents. Routing and sign-off stay with the job.",
+    category: "production-monitoring",
+    url: "",
+    image: img_jobcard,
+    flyers: [],
+  },
+  {
+    id: "tools",
+    title: "Tool Room Inventory Management",
+    text: "Register tools, jigs and fixtures. Record issue and return against operator or production order. Usage by machine, shift and part number, with remaining life at issue.",
+    category: "inventory",
+    url: "",
+    image: img_tools,
+    flyers: [],
+  },
+  {
+    id: "orders",
+    title: "Order Management App for Top Management",
+    text: "Digitized production orders. Supervisors review and approve the plan; leadership sees open orders, promised dates and dispatch without waiting for a compiled file.",
+    category: "process-planning",
+    url: "",
+    image: img_orders,
+    flyers: [],
+  },
+  {
+    id: "projects",
+    title: "Project Management App",
+    text: "Risk mitigation and rescheduling when the machine schedule changes. Internal tasks, owners and dates sit next to the production plan.",
+    category: "process-planning",
+    url: "",
+    image: img_projects,
+    flyers: [],
+  },
+  {
+    id: "viewer",
+    title: "3D Viewer",
+    text: "Process visualization on the shop PC. Open the model with the job without a CAD seat on every terminal.",
+    category: "process-planning",
+    url: "",
+    image: img_viewer,
+    flyers: [],
+  },
+]
+
+export const customers = [
+  {
+    "id": "tesa",
+    "name": "Tesa",
+    "image": "/customers/tesa.svg"
+  },
+  {
+    "id": "karakal-dubai",
+    "name": "Karakal Dubai",
+    "image": "/customers/karakal-dubai.svg"
+  },
+  {
+    "id": "eagle-bengaluru",
+    "name": "Eagle Bengaluru",
+    "image": "/customers/eagle-bengaluru.svg"
+  }
 ]
 
 if (import.meta.hot) {

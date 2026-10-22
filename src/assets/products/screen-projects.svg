@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810">
+  <rect width="1440" height="810" fill="#F4F7FB"/>
+  <rect width="1440" height="56" fill="#0A2744"/>
+  <circle cx="32" cy="28" r="8" fill="none" stroke="#7DD3FC" stroke-width="1.6"/>
+  <circle cx="32" cy="28" r="2.2" fill="#7DD3FC"/>
+  <text x="48" y="33" font-size="15" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#FFFFFF">Digital Transformation</text>
+  <text x="280" y="33" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#B9D4EA">Process Planning</text>
+  <text x="1188" y="33" text-anchor="end" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#B9D4EA">K. Rao  ·  QC</text>
+  <text x="1368" y="33" text-anchor="end" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#B9D4EA">Shift A  ·  Line 2</text>
+  <rect x="0" y="56" width="200" height="754" fill="#FFFFFF"/>
+  <rect x="200" y="56" width="1" height="754" fill="#D5E2EF"/>
+  <rect x="12" y="72" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="93" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Gauges</text>
+<rect x="12" y="108" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="129" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">INDi4.0</text>
+<rect x="12" y="144" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="165" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">SPC</text>
+<rect x="12" y="180" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="201" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Lab</text>
+<rect x="12" y="216" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="237" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">INDIQ</text>
+<rect x="12" y="252" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="273" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Travel card</text>
+<rect x="12" y="288" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="309" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Tool crib</text>
+<rect x="12" y="324" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="345" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Orders</text>
+<rect x="12" y="360" width="176" height="32" rx="6" fill="#E8F2FC"/>
+        <text x="28" y="381" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#1B78D4">Planning</text>
+<rect x="12" y="396" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="417" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">3D viewer</text>
+  <text x="228" y="92" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Machine schedule  ·  22 Apr  ·  09:00–17:00</text>
+  <rect x="980" y="68" width="236" height="32" rx="6" fill="#FFFFFF" stroke="#D5E2EF"/>
+  <text x="996" y="89" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Search plant / job</text>
+  <rect x="1224" y="68" width="80" height="32" rx="6" fill="#1B78D4"/>
+  <text x="1246" y="89" font-size="12" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#FFFFFF">Filter</text>
+  <rect x="1312" y="68" width="84" height="32" rx="6" fill="#FFFFFF" stroke="#D5E2EF"/>
+  <text x="1330" y="89" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Export</text>
+  <rect x="228" y="112" width="1168" height="640" rx="10" fill="#FFFFFF" stroke="#D5E2EF"/>
+    <text x="248" y="148" font-size="12" fill="#5A7188" font-family="Segoe UI, Arial, sans-serif">Capacity warning: Mill M-07 overloaded 14:00–17:00</text>
+    <text x="248" y="188" font-size="13" font-weight="700" fill="#0A2744" font-family="Segoe UI, Arial, sans-serif">Lathe L-02</text>
+        <rect x="400" y="170" width="960" height="88" rx="8" fill="#F4F7FB"/>
+        <rect x="420" y="182" width="300" height="64" rx="6" fill="#D6E9F8"/>
+        <text x="432" y="220" font-size="13" font-weight="700" fill="#0A2744" font-family="Segoe UI, Arial, sans-serif">J-4412 Op10</text><text x="248" y="318" font-size="13" font-weight="700" fill="#0A2744" font-family="Segoe UI, Arial, sans-serif">Mill M-07</text>
+        <rect x="400" y="300" width="960" height="88" rx="8" fill="#F4F7FB"/>
+        <rect x="660" y="312" width="300" height="64" rx="6" fill="#F8E8C8"/>
+        <text x="672" y="350" font-size="13" font-weight="700" fill="#0A2744" font-family="Segoe UI, Arial, sans-serif">J-4412 Op20</text><text x="248" y="448" font-size="13" font-weight="700" fill="#0A2744" font-family="Segoe UI, Arial, sans-serif">Grind G-01</text>
+        <rect x="400" y="430" width="960" height="88" rx="8" fill="#F4F7FB"/>
+        <rect x="920" y="442" width="300" height="64" rx="6" fill="#D6E9F8"/>
+        <text x="932" y="480" font-size="13" font-weight="700" fill="#0A2744" font-family="Segoe UI, Arial, sans-serif">J-4418 Op30</text><text x="248" y="578" font-size="13" font-weight="700" fill="#0A2744" font-family="Segoe UI, Arial, sans-serif">Inspect</text>
+        <rect x="400" y="560" width="960" height="88" rx="8" fill="#F4F7FB"/>
+        <rect x="1120" y="572" width="220" height="64" rx="6" fill="#D6E9F8"/>
+        <text x="1132" y="610" font-size="13" font-weight="700" fill="#0A2744" font-family="Segoe UI, Arial, sans-serif">J-4412 FAI</text>
+  <rect x="200" y="778" width="1240" height="32" fill="#FFFFFF"/>
+  <rect x="200" y="778" width="1240" height="1" fill="#D5E2EF"/>
+  <text x="216" y="799" font-size="11" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Plant  ·  Pune  ·  connected</text>
+  <text x="1368" y="799" text-anchor="end" font-size="11" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">22 Apr 2026  09:14</text>
+</svg>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810">
+  <rect width="1440" height="810" fill="#F4F7FB"/>
+  <rect width="1440" height="56" fill="#0A2744"/>
+  <circle cx="32" cy="28" r="8" fill="none" stroke="#7DD3FC" stroke-width="1.6"/>
+  <circle cx="32" cy="28" r="2.2" fill="#7DD3FC"/>
+  <text x="48" y="33" font-size="15" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#FFFFFF">Digital Transformation</text>
+  <text x="280" y="33" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#B9D4EA">Quality Management</text>
+  <text x="1188" y="33" text-anchor="end" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#B9D4EA">K. Rao  ·  QC</text>
+  <text x="1368" y="33" text-anchor="end" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#B9D4EA">Shift A  ·  Line 2</text>
+  <rect x="0" y="56" width="200" height="754" fill="#FFFFFF"/>
+  <rect x="200" y="56" width="1" height="754" fill="#D5E2EF"/>
+  <rect x="12" y="72" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="93" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Gauges</text>
+<rect x="12" y="108" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="129" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">INDi4.0</text>
+<rect x="12" y="144" width="176" height="32" rx="6" fill="#E8F2FC"/>
+        <text x="28" y="165" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#1B78D4">SPC</text>
+<rect x="12" y="180" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="201" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Lab</text>
+<rect x="12" y="216" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="237" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">INDIQ</text>
+<rect x="12" y="252" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="273" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Travel card</text>
+<rect x="12" y="288" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="309" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Tool crib</text>
+<rect x="12" y="324" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="345" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Orders</text>
+<rect x="12" y="360" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="381" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Planning</text>
+<rect x="12" y="396" width="176" height="32" rx="6" fill="transparent"/>
+        <text x="28" y="417" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">3D viewer</text>
+  <text x="228" y="92" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">SPC — Ø12.00  ·  Op 10</text>
+  <rect x="980" y="68" width="236" height="32" rx="6" fill="#FFFFFF" stroke="#D5E2EF"/>
+  <text x="996" y="89" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Search plant / job</text>
+  <rect x="1224" y="68" width="80" height="32" rx="6" fill="#1B78D4"/>
+  <text x="1246" y="89" font-size="12" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#FFFFFF">Filter</text>
+  <rect x="1312" y="68" width="84" height="32" rx="6" fill="#FFFFFF" stroke="#D5E2EF"/>
+  <text x="1330" y="89" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">Export</text>
+  <rect x="228" y="112" width="276" height="86" rx="10" fill="#FFFFFF" stroke="#D5E2EF"/>
+        <text x="246" y="142" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Cp</text>
+        <text x="246" y="178" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">1.33</text>
+<rect x="520" y="112" width="276" height="86" rx="10" fill="#FFFFFF" stroke="#D5E2EF"/>
+        <text x="538" y="142" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Cpk</text>
+        <text x="538" y="178" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">1.21</text>
+<rect x="812" y="112" width="276" height="86" rx="10" fill="#FFFFFF" stroke="#D5E2EF"/>
+        <text x="830" y="142" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Pp</text>
+        <text x="830" y="178" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">1.28</text>
+<rect x="1104" y="112" width="276" height="86" rx="10" fill="#FFFFFF" stroke="#D5E2EF"/>
+        <text x="1122" y="142" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Ppk</text>
+        <text x="1122" y="178" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#0A2744">1.16</text>
+    <rect x="228" y="220" width="960" height="520" rx="10" fill="#FFFFFF" stroke="#D5E2EF"/>
+    <text x="248" y="252" font-size="13" font-weight="700" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">X-bar  ·  last 25 subgroups</text>
+    <line x1="268" y1="310" x2="1140" y2="310" stroke="#C24141" stroke-dasharray="5 4"/>
+    <text x="1150" y="314" font-size="11" fill="#C24141" font-family="Segoe UI, Arial, sans-serif">UCL 12.018</text>
+    <line x1="268" y1="430" x2="1140" y2="430" stroke="#1B78D4"/>
+    <text x="1150" y="434" font-size="11" fill="#1B78D4" font-family="Segoe UI, Arial, sans-serif">CL 12.002</text>
+    <line x1="268" y1="550" x2="1140" y2="550" stroke="#C24141" stroke-dasharray="5 4"/>
+    <text x="1150" y="554" font-size="11" fill="#C24141" font-family="Segoe UI, Arial, sans-serif">LCL 11.986</text>
+    <polyline fill="none" stroke="#0A2744" stroke-width="2" points="268,428 304,422 340,434 376,418 412,426 448,412 484,430 520,424 556,438 592,420 628,416 664,432 700,426 736,410 772,422 808,428 844,414 880,420 916,436 952,424 988,418 1024,430 1060,422 1096,426 1132,420"/>
+    <circle cx="268" cy="428" r="3.2" fill="#1B78D4"/><circle cx="304" cy="422" r="3.2" fill="#1B78D4"/><circle cx="340" cy="434" r="3.2" fill="#1B78D4"/><circle cx="376" cy="418" r="3.2" fill="#1B78D4"/><circle cx="412" cy="426" r="3.2" fill="#1B78D4"/><circle cx="448" cy="412" r="3.2" fill="#1B78D4"/><circle cx="484" cy="430" r="3.2" fill="#1B78D4"/><circle cx="520" cy="424" r="3.2" fill="#1B78D4"/><circle cx="556" cy="438" r="3.2" fill="#1B78D4"/><circle cx="592" cy="420" r="3.2" fill="#1B78D4"/><circle cx="628" cy="416" r="3.2" fill="#1B78D4"/><circle cx="664" cy="432" r="3.2" fill="#1B78D4"/><circle cx="700" cy="426" r="3.2" fill="#1B78D4"/><circle cx="736" cy="410" r="3.2" fill="#1B78D4"/><circle cx="772" cy="422" r="3.2" fill="#1B78D4"/><circle cx="808" cy="428" r="3.2" fill="#1B78D4"/><circle cx="844" cy="414" r="3.2" fill="#1B78D4"/><circle cx="880" cy="420" r="3.2" fill="#1B78D4"/><circle cx="916" cy="436" r="3.2" fill="#1B78D4"/><circle cx="952" cy="424" r="3.2" fill="#1B78D4"/><circle cx="988" cy="418" r="3.2" fill="#1B78D4"/><circle cx="1024" cy="430" r="3.2" fill="#1B78D4"/><circle cx="1060" cy="422" r="3.2" fill="#1B78D4"/><circle cx="1096" cy="426" r="3.2" fill="#1B78D4"/><circle cx="1132" cy="420" r="3.2" fill="#1B78D4"/>
+  <rect x="200" y="778" width="1240" height="32" fill="#FFFFFF"/>
+  <rect x="200" y="778" width="1240" height="1" fill="#D5E2EF"/>
+  <text x="216" y="799" font-size="11" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">Plant  ·  Pune  ·  connected</text>
+  <text x="1368" y="799" text-anchor="end" font-size="11" font-family="Segoe UI, Arial, sans-serif" fill="#5A7188">22 Apr 2026  09:14</text>
+</svg>
