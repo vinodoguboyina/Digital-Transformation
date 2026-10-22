@@ -117,9 +117,9 @@
       "id": "orders",
       "title": "Order Management App for Top Management",
       "text": "Digitized production orders. Supervisors review and approve the plan; leadership sees open orders, promised dates and dispatch without waiting for a compiled file.",
+      "category": "process-planning",
       "url": "",
       "image": "products/photo-orders.jpg",
-      "category": "process-planning",
       "flyers": []
     },
     {
