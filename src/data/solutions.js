@@ -38,7 +38,7 @@ export const solutions = [
     title: "Gauge Management Software",
     text: "Register every gauge with identity, location and due date. Alerts fire before calibration is missed, so a gauge past date is not still on the machine.",
     category: "quality-management",
-    url: "",
+    url: "http://localhost/",
     image: img_gauges,
     flyers: [{"id":"04fb5aac-b483-43fd-9880-5b4b036d6420","name":"GAGEtrace Product Brochure.pdf","file":"gauges/04fb5aac_b483_43fd_9880_5b4b036d6420.pdf","type":"application/pdf"}],
   },
