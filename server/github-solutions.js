@@ -103,6 +103,9 @@ async function github(path, options = {}) {
     if (response.status === 401 || message === 'Bad credentials') {
       throw new Error('GitHub token is missing or invalid. Add GITHUB_TOKEN in Vercel Environment Variables, then redeploy.')
     }
+    if (response.status === 403 || /not accessible/i.test(message)) {
+      throw new Error('GitHub token cannot write to this repo. Edit GITHUB_TOKEN in Vercel: create a classic token with the repo box ticked, then redeploy.')
+    }
     throw new Error(message)
   }
   return data

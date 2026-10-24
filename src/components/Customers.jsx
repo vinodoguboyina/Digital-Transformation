@@ -2,6 +2,7 @@ import { UploadOutlined } from '@ant-design/icons'
 import { Modal } from 'antd'
 import { useEffect, useRef, useState } from 'react'
 import { useAuth } from '@/auth'
+import { useNotice } from '@/notice'
 import { customers as savedCustomers } from '@/data/solutions'
 
 function readFileAsDataUrl(file) {
@@ -37,6 +38,7 @@ function LogoMark({ customer }) {
 
 export default function Customers() {
   const { admin } = useAuth()
+  const notice = useNotice()
   const [customers, setCustomers] = useState(savedCustomers)
   const [error, setError] = useState('')
   const fileRef = useRef(null)
@@ -75,12 +77,16 @@ export default function Customers() {
       })
       const saved = await response.json().catch(() => null)
       if (!response.ok || !saved?.id) {
-        setError(saved?.error || 'Could not upload that logo.')
+        const text = saved?.error || 'Could not upload that logo.'
+        setError(text)
+        notice.fail(text)
         return
       }
       setCustomers((current) => (current.some((item) => item.id === saved.id) ? current.map((item) => (item.id === saved.id ? saved : item)) : [...current, saved]))
+      notice.ok('Client logo uploaded.')
     } catch {
       setError('Could not upload that logo.')
+      notice.fail('Could not upload that logo.')
     }
   }
 
@@ -99,6 +105,7 @@ export default function Customers() {
         const result = await response.json().catch(() => null)
         if (!response.ok) throw new Error(result?.error || 'Could not remove that logo.')
         setCustomers((current) => current.filter((item) => item.id !== customer.id))
+        notice.ok('Client logo removed.')
       },
     })
   }

@@ -1,4 +1,4 @@
-import { ConfigProvider } from 'antd'
+import { App as AntApp, ConfigProvider } from 'antd'
 import { AuthProvider } from './auth'
 import Customers from './components/Customers'
 import EmployeeAccess from './components/EmployeeAccess'
@@ -34,6 +34,7 @@ function App() {
           ),
       }}
     >
+      <AntApp>
       <AuthProvider>
         <SmoothRoot>
           <div className="site-shell">
@@ -47,6 +48,7 @@ function App() {
           </div>
         </SmoothRoot>
       </AuthProvider>
+      </AntApp>
     </ConfigProvider>
   )
 }

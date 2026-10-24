@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { Form, Input, Modal } from 'antd'
 import { useAuth } from '@/auth'
+import { useNotice } from '@/notice'
 import { BrandMark } from '@/components/SiteHeader'
 
 export default function EmployeeAccess() {
   const { admin, login, logout, changeLogin } = useAuth()
+  const notice = useNotice()
   const [open, setOpen] = useState(false)
   const [mode, setMode] = useState('login')
   const [employeeId, setEmployeeId] = useState('')
@@ -47,6 +49,7 @@ export default function EmployeeAccess() {
       setOpen(false)
       setEmployeeId('')
       setPassword('')
+      notice.ok('Signed in successfully.')
     } catch (err) {
       setError(err.message || 'Could not sign in.')
       return Promise.reject()
@@ -65,6 +68,7 @@ export default function EmployeeAccess() {
     try {
       await changeLogin({ employeeId: nextId, password: nextPassword })
       close()
+      notice.ok('Employee login updated.')
     } catch (err) {
       setError(err.message || 'Could not update the employee login.')
       return Promise.reject()
@@ -108,7 +112,14 @@ export default function EmployeeAccess() {
                 <button type="button" onClick={openChange} className="hover:text-white">
                   Change login
                 </button>
-                <button type="button" onClick={logout} className="hover:text-white">
+                <button
+                  type="button"
+                  onClick={async () => {
+                    await logout()
+                    notice.ok('Signed out successfully.')
+                  }}
+                  className="hover:text-white"
+                >
                   Sign out
                 </button>
               </span>

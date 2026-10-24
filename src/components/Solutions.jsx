@@ -17,6 +17,7 @@ import { Button, Form, Input, Modal, Select, Tooltip } from 'antd'
 import { useEffect, useRef, useState } from 'react'
 import pdfWorker from 'pdfjs-dist/build/pdf.worker.min.mjs?url'
 import { useAuth } from '@/auth'
+import { useNotice } from '@/notice'
 import { categories as savedCategories, solutions as savedSolutions } from '@/data/solutions'
 import Reveal from '@/components/Reveal'
 import { cn } from '@/lib/utils'
@@ -247,7 +248,7 @@ export default function Solutions() {
   const [form, setForm] = useState(null)
   const [categoryForm, setCategoryForm] = useState(null)
   const [error, setError] = useState('')
-  const [notice, setNotice] = useState(null)
+  const notice = useNotice()
   const [dragId, setDragId] = useState('')
   const [overId, setOverId] = useState('')
   const [preview, setPreview] = useState(null)
@@ -258,9 +259,9 @@ export default function Solutions() {
   const flyerTarget = useRef({ solutionId: '', flyerId: '' })
 
   function showNotice(text, ok = true) {
-    const next = { text, ok }
-    setNotice(next)
-    window.setTimeout(() => setNotice((current) => (current === next ? null : current)), 3000)
+    if (ok === false) notice.fail(text)
+    else if (ok === 'info') notice.info(text)
+    else notice.ok(text)
   }
 
   useEffect(() => {
@@ -372,7 +373,9 @@ export default function Solutions() {
       })
       const saved = await response.json().catch(() => null)
       if (!response.ok || !saved?.id) {
-        setError(saved?.error || 'Could not save.')
+        const text = saved?.error || 'Could not save.'
+        setError(text)
+        showNotice(text, false)
         return Promise.reject()
       }
       const editing = solutions.some((solution) => solution.id === saved.id)
@@ -386,6 +389,7 @@ export default function Solutions() {
       showNotice(editing ? 'Solution updated.' : 'Solution added.')
     } catch {
       setError('Could not save.')
+      showNotice('Could not save.', false)
       return Promise.reject()
     }
   }
@@ -464,7 +468,7 @@ export default function Solutions() {
         ? `/api/solutions/${encodeURIComponent(solutionId)}/flyers/${encodeURIComponent(flyerId)}`
         : `/api/solutions/${encodeURIComponent(solutionId)}/flyers`
       sessionStorage.setItem('dt-scroll', JSON.stringify({ y: window.scrollY, t: Date.now() }))
-      showNotice('Uploading flyer…')
+      showNotice('Uploading flyer…', 'info')
       const id = crypto.randomUUID()
       const uploadId = crypto.randomUUID()
       const count = Math.max(1, Math.ceil(file.size / FLYER_CHUNK_BYTES))
@@ -634,11 +638,6 @@ export default function Solutions() {
 
   return (
     <section id="products" className="scroll-mt-16 bg-paper px-4 py-14 text-ink sm:px-6 sm:py-16">
-      {notice && (
-        <div className={`fixed bottom-5 left-1/2 z-[60] w-[calc(100%-2rem)] max-w-md -translate-x-1/2 px-4 py-2 text-center text-sm font-medium text-white shadow-lg ${notice.ok ? 'bg-emerald-700' : 'bg-rose-700'}`}>
-          {notice.text}
-        </div>
-      )}
       <div className="mx-auto w-full max-w-[1200px]">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <Reveal className="min-w-0">
