@@ -92,7 +92,7 @@ export const solutions = [
     title: "Tool Room Inventory Management",
     text: "Register tools, jigs and fixtures. Record issue and return against operator or production order. Usage by machine, shift and part number, with remaining life at issue.",
     category: "inventory",
-    url: "",
+    url: "http://localhost/login",
     image: img_tools,
     flyers: [{"id":"1f77bf99-9a33-4f60-a74f-8d2dca6bc0e8","name":"CRIBmanager Product Brochure.pdf","file":"tools/1f77bf99_9a33_4f60_a74f_8d2dca6bc0e8.pdf","type":"application/pdf"}],
   },
