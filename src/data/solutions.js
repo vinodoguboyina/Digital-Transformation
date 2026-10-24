@@ -83,7 +83,7 @@ export const solutions = [
     title: "Digitisation of Job Cards",
     text: "Job card display: when the card is received or scanned, the operator sees the interlinked documents. Routing and sign-off stay with the job.",
     category: "production-monitoring",
-    url: "",
+    url: "http://localhost:5174/login",
     image: img_jobcard,
     flyers: [],
   },
