@@ -86,13 +86,24 @@ function IconTip({ label, onClick, href, danger, className, children, named }) {
 }
 
 function flyerKind(flyer) {
-  const name = flyer.name || ''
-  const type = flyer.type || ''
-  if (type.startsWith('image/') || /\.(png|jpe?g|gif|webp|bmp|tiff?)$/i.test(name)) return 'image'
-  if (type.includes('pdf') || /\.pdf$/i.test(name)) return 'pdf'
-  if (/\.xlsx?$/i.test(name) || type.includes('excel') || type.includes('spreadsheet')) return 'sheet'
-  if (/\.docx?$/i.test(name) || type.includes('word')) return 'word'
+  const name = [flyer?.name, flyer?.file, flyer?.url, flyer?.remoteUrl].filter(Boolean).join(' ')
+  const type = flyer?.type || ''
+  if (type.startsWith('image/') || /\.(png|jpe?g|gif|webp|bmp|tiff?)(\?|$)/i.test(name)) return 'image'
+  if (type.includes('pdf') || /\.pdf(\?|$)/i.test(name)) return 'pdf'
+  if (/\.xlsx?(\?|$)/i.test(name) || type.includes('excel') || type.includes('spreadsheet')) return 'sheet'
+  if (/\.docx?(\?|$)/i.test(name) || type.includes('word')) return 'word'
   return 'file'
+}
+
+function flyerSources(flyer) {
+  const file = String(flyer?.file || '').replaceAll('\\', '/')
+  const urls = [
+    flyer?.url,
+    flyer?.remoteUrl,
+    file ? `/flyers/${file}` : '',
+    file ? `/api/flyers?file=${encodeURIComponent(file)}` : '',
+  ]
+  return [...new Set(urls.filter((url) => typeof url === 'string' && url))]
 }
 
 function FlyerIcon({ flyer, className }) {
@@ -109,9 +120,10 @@ function canPreviewFlyer(flyer) {
 }
 
 function downloadFlyer(flyer) {
-  if (!flyer?.url) return
+  const href = flyerSources(flyer)[0]
+  if (!href) return
   const link = document.createElement('a')
-  link.href = flyer.url
+  link.href = href
   link.download = flyer.name || 'flyer'
   link.rel = 'noreferrer'
   document.body.appendChild(link)
@@ -132,7 +144,7 @@ function FlyerPreview({ flyer, onPreview, onReplace, onDelete, compact, admin })
     <div className="rounded-lg border border-slate-200 bg-slate-50 p-3">
       <div className="flex min-w-0 items-center gap-3">
         {kind === 'image' ? (
-          <img src={flyer.url} alt="" className="h-12 w-12 shrink-0 rounded object-cover" />
+          <img src={flyerSources(flyer)[0]} alt="" className="h-12 w-12 shrink-0 rounded object-cover" />
         ) : (
           <span className="grid h-12 w-12 shrink-0 place-items-center rounded bg-white text-slate-500">
             <FlyerIcon flyer={flyer} className="text-lg" />
@@ -159,14 +171,33 @@ function FlyerPreview({ flyer, onPreview, onReplace, onDelete, compact, admin })
   )
 }
 
-function PdfCanvasPreview({ url, name, onDownload }) {
+async function loadPdfBytes(urls) {
+  let lastError
+  for (const url of urls) {
+    try {
+      if (url.startsWith('data:')) {
+        const match = url.match(/^data:[^;]+;base64,(.+)$/)
+        if (match) return Uint8Array.from(atob(match[1]), (char) => char.charCodeAt(0))
+      }
+      const response = await fetch(url)
+      if (!response.ok) throw new Error('Could not load flyer')
+      return new Uint8Array(await response.arrayBuffer())
+    } catch (error) {
+      lastError = error
+    }
+  }
+  throw lastError || new Error('Could not load flyer')
+}
+
+function PdfCanvasPreview({ flyer, onDownload }) {
   const hostRef = useRef(null)
   const [error, setError] = useState(false)
 
   useEffect(() => {
     let ignore = false
     const host = hostRef.current
-    if (!host || !url) return undefined
+    const urls = flyerSources(flyer)
+    if (!host || urls.length === 0) return undefined
     host.replaceChildren()
     setError(false)
 
@@ -174,14 +205,15 @@ function PdfCanvasPreview({ url, name, onDownload }) {
       try {
         const pdfjs = await import('pdfjs-dist')
         pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker
-        const doc = await pdfjs.getDocument(url).promise
+        const data = await loadPdfBytes(urls)
+        const doc = await pdfjs.getDocument({ data, disableRange: true, disableStream: true }).promise
         if (ignore) return
         for (let number = 1; number <= doc.numPages; number += 1) {
           const page = await doc.getPage(number)
           if (ignore) return
           const width = host.clientWidth || 760
           const base = page.getViewport({ scale: 1 })
-          const viewport = page.getViewport({ scale: width / base.width })
+          const viewport = page.getViewport({ scale: Math.max(width, 320) / base.width })
           const canvas = document.createElement('canvas')
           canvas.width = viewport.width
           canvas.height = viewport.height
@@ -199,12 +231,13 @@ function PdfCanvasPreview({ url, name, onDownload }) {
       }
     }
 
-    draw()
+    const timer = window.setTimeout(draw, 50)
     return () => {
       ignore = true
+      window.clearTimeout(timer)
       host.replaceChildren()
     }
-  }, [url])
+  }, [flyer])
 
   if (error) {
     return (
@@ -224,7 +257,22 @@ function PdfCanvasPreview({ url, name, onDownload }) {
     )
   }
 
-  return <div ref={hostRef} aria-label={name} className="max-h-[70vh] overflow-auto bg-slate-100 p-3" />
+  return <div ref={hostRef} aria-label={flyer?.name || 'Flyer preview'} className="max-h-[70vh] overflow-auto bg-slate-100 p-3" />
+}
+
+function ImageFlyerPreview({ flyer }) {
+  const [index, setIndex] = useState(0)
+  const urls = flyerSources(flyer)
+  const src = urls[index]
+  if (!src) return null
+  return (
+    <img
+      src={src}
+      alt={flyer.name}
+      className="max-h-[70vh] w-full rounded-lg bg-slate-50 object-contain"
+      onError={() => setIndex((current) => (current + 1 < urls.length ? current + 1 : current))}
+    />
+  )
 }
 
 function demoHref(url) {
@@ -932,10 +980,10 @@ export default function Solutions() {
         destroyOnHidden
       >
         {preview && canPreviewFlyer(preview) && flyerKind(preview) === 'image' ? (
-          <img src={preview.url} alt={preview.name} className="max-h-[70vh] w-full rounded-lg bg-slate-50 object-contain" />
+          <ImageFlyerPreview flyer={preview} />
         ) : null}
         {preview && canPreviewFlyer(preview) && flyerKind(preview) === 'pdf' ? (
-          <PdfCanvasPreview url={preview.url} name={preview.name} onDownload={() => downloadFlyer(preview)} />
+          <PdfCanvasPreview flyer={preview} onDownload={() => downloadFlyer(preview)} />
         ) : null}
         {preview && !canPreviewFlyer(preview) ? (
           <div className="flex flex-col items-center justify-center px-6 py-12 text-center">

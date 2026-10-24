@@ -15,6 +15,7 @@ import {
   listFlyers,
   parseDataFile,
   readRawBody,
+  safeFlyerFile,
 } from './server/flyers.js'
 
 const seeds = [
@@ -192,6 +193,21 @@ export function solutionsStorePlugin(root) {
     ensure()
     server.middlewares.use(async (req, res, next) => {
       const url = (req.url || '').split('?')[0]
+
+      if (url === '/api/flyers' && req.method === 'GET') {
+        const file = safeFlyerFile(new URL(req.url, 'http://localhost').searchParams.get('file'))
+        const dest = flyerPath(file)
+        if (!dest || !fs.existsSync(dest)) {
+          sendJson(res, 404, { error: 'Flyer not found.' })
+          return
+        }
+        const ext = flyerExt(file)
+        res.statusCode = 200
+        res.setHeader('Content-Type', FLYER_TYPES[ext] || 'application/octet-stream')
+        res.setHeader('Content-Disposition', `inline; filename="${path.basename(dest)}"`)
+        fs.createReadStream(dest).pipe(res)
+        return
+      }
 
       if (url === '/api/auth/me' && req.method === 'GET') {
         noStore(res)

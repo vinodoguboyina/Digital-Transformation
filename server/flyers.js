@@ -89,3 +89,9 @@ export function flyerName(name) {
 export function listFlyers(item) {
   return Array.isArray(item?.flyers) ? item.flyers : []
 }
+
+export function safeFlyerFile(file) {
+  const value = String(file || '').replaceAll('\\', '/').replace(/^\/+/, '')
+  if (!value || value.includes('..') || value.startsWith('/') || value.includes(':')) return ''
+  return value
+}

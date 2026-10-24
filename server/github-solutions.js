@@ -11,6 +11,7 @@ import {
   listFlyers,
   parseDataFile,
   readRawBody,
+  safeFlyerFile,
 } from './flyers.js'
 
 const REPO = 'vinodoguboyina/Digital-Transformation'
@@ -59,12 +60,14 @@ function publicImage(image) {
 }
 
 function publicFlyer(flyer, urlOverride) {
+  const file = String(flyer.file || '').replaceAll('\\', '/')
   return {
     id: flyer.id,
     name: flyer.name,
     type: flyer.type || '',
-    file: flyer.file,
-    url: urlOverride || `https://raw.githubusercontent.com/${REPO}/${BRANCH}/public/flyers/${flyer.file}`,
+    file,
+    url: urlOverride || (file ? `/flyers/${file}` : ''),
+    remoteUrl: file ? `https://raw.githubusercontent.com/${REPO}/${BRANCH}/public/flyers/${file}` : '',
   }
 }
 
@@ -438,4 +441,21 @@ export async function saveAdminCredentials(record) {
     [{ path: CREDENTIALS_PATH, content: `${JSON.stringify({ employeeId, passwordHash }, null, 2)}\n` }],
     'Update employee login',
   )
+}
+
+export async function readPublicFlyer(file) {
+  const safe = safeFlyerFile(file)
+  if (!safe) return { status: 400 }
+  const raw = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/public/flyers/${safe}`
+  const headers = { 'User-Agent': 'digital-transformation' }
+  if (process.env.GITHUB_TOKEN) headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`
+  const response = await fetch(raw, { headers })
+  if (!response.ok) return { status: 404 }
+  const ext = flyerExt(safe)
+  return {
+    status: 200,
+    buffer: Buffer.from(await response.arrayBuffer()),
+    type: FLYER_TYPES[ext] || response.headers.get('content-type') || 'application/octet-stream',
+    name: safe.split('/').pop(),
+  }
 }
