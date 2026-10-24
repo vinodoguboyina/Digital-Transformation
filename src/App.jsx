@@ -22,6 +22,17 @@ function App() {
           },
         },
       }}
+      form={{
+        requiredMark: (label, info) =>
+          info.required ? (
+            <>
+              <span className="mr-1 text-rose-600">*</span>
+              {label}
+            </>
+          ) : (
+            label
+          ),
+      }}
     >
       <AuthProvider>
         <SmoothRoot>

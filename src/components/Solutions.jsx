@@ -817,7 +817,7 @@ export default function Solutions() {
         styles={{ body: { maxHeight: 'min(70vh, 560px)', overflowY: 'auto' } }}
       >
         {categoryForm ? (
-          <Form layout="vertical" requiredMark={false}>
+          <Form layout="vertical">
             <Form.Item label="Category Name" required>
               <Input
                 value={categoryForm.name}
@@ -852,7 +852,7 @@ export default function Solutions() {
         styles={{ body: { maxHeight: 'min(70vh, 640px)', overflowY: 'auto' } }}
       >
         {form ? (
-          <Form layout="vertical" requiredMark={false}>
+          <Form layout="vertical">
             {form.lockedCategory ? (
               <Form.Item label="Category">
                 <Input disabled value={categories.find((category) => category.id === form.category)?.name || form.category} />

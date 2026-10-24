@@ -100,6 +100,9 @@ async function github(path, options = {}) {
   const data = text ? JSON.parse(text) : null
   if (!response.ok) {
     const message = data?.message || response.statusText
+    if (response.status === 401 || message === 'Bad credentials') {
+      throw new Error('GitHub token is missing or invalid. Add GITHUB_TOKEN in Vercel Environment Variables, then redeploy.')
+    }
     throw new Error(message)
   }
   return data

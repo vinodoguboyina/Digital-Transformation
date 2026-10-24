@@ -135,7 +135,7 @@ export default function EmployeeAccess() {
         style={{ maxWidth: 'calc(100vw - 24px)' }}
       >
         <p className="mb-4 text-sm text-slate-600">Staff access only. Visitors cannot change this site.</p>
-        <Form layout="vertical" requiredMark={false} autoComplete="off">
+        <Form layout="vertical" autoComplete="off">
           <Form.Item label="Employee ID" required>
             <Input
               autoComplete="username"
@@ -169,7 +169,7 @@ export default function EmployeeAccess() {
         style={{ maxWidth: 'calc(100vw - 24px)' }}
       >
         <p className="mb-4 text-sm text-slate-600">Only this new ID and password will work after you save. The old login is removed.</p>
-        <Form layout="vertical" requiredMark={false} autoComplete="off">
+        <Form layout="vertical" autoComplete="off">
           <Form.Item label="Employee ID" required>
             <Input
               autoComplete="username"
