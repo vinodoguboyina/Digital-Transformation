@@ -123,15 +123,6 @@ export const solutions = [
     image: img_viewer,
     flyers: [],
   },
-  {
-    id: "f468a4e6-5e83-4f1c-8f7b-8d22ccbbe152",
-    title: "hgdh",
-    text: "hdgh",
-    category: "quality-management",
-    url: "dgfh",
-    image: "",
-    flyers: [],
-  },
 ]
 
 export const customers = [
