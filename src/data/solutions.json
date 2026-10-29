@@ -109,7 +109,7 @@
       "title": "Tool Room Inventory Management",
       "text": "Register tools, jigs and fixtures. Record issue and return against operator or production order. Usage by machine, shift and part number, with remaining life at issue.",
       "category": "inventory",
-      "url": "http://localhost/login",
+      "url": "http://localhost:8081/login",
       "image": "products/photo-tools.jpg",
       "flyers": [
         {
