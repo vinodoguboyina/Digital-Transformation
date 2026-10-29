@@ -65,7 +65,7 @@ export const solutions = [
     title: "Digitisation of Testing Labs",
     text: "Dimensional measurement for IPID monitoring. Data from measuring instruments and CMMs, and the inspection report generated from the same entry.",
     category: "quality-management",
-    url: "http://localhost/supervisor-dashboard",
+    url: "http://localhost/login",
     image: img_lab,
     flyers: [{"id":"7894c553-afe2-44c7-8bcf-860c73d9f2bc","name":"LIMS .pdf","file":"lab/7894c553_afe2_44c7_8bcf_860c73d9f2bc.pdf","type":"application/pdf"}],
   },
